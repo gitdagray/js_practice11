@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Assignment 11</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.1.1/mocha.css"
+    integrity="sha512-Ytt2foRGKdIInPXwyS3gxRvfTv4n2wi7uB7neCLH1LjExT+PKBeQu6LNVB4QpHaJqx7m2btagBs4kqxYC1QNFg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <section id="hiddenSection" class="hiddenSection">
+    <div class="buttons-container">
+      <button>One</button>
+      <button>Two</button>
+      <button>Three</button>
+      <button>Four</button>
+      <button>Five</button>
+      <button>Six</button>
+    </div>
+    <div class="para-container">
+      <p>Paragraph One.</p>
+      <p>Paragraph Two.</p>
+      <p>Paragraph Three.</p>
+      <p>Paragraph Four.</p>
+      <p>Paragraph Five.</p>
+      <p>Paragraph Six.</p>
+    </div>
+    <hr />
+  </section>
+  <section id="myPage" class="myPage">
+    <div class="buttons-container">
+      <button id="button1">One</button>
+      <button id="button2">Two</button>
+      <button>Three</button>
+      <button>Four</button>
+      <button>Five</button>
+      <button>Six</button>
+    </div>
+    <div class="para-container">
+      <p id="p1">Paragraph One.</p>
+      <p id="p2">Paragraph Two.</p>
+      <p>Paragraph Three.</p>
+      <p>Paragraph Four.</p>
+      <p>Paragraph Five.</p>
+      <p>Paragraph Six.</p>
+    </div>
+    <hr />
+  </section>
+  <section id="tests">
+    <div class="directions">
+      <p>
+        <span id="reloadPage">Refresh this page</span> to see your score update
+        after you have made changes to your Javascript code in the main.js file.
+      </p>
+      <p>
+        When you are ready to submit your assignment, click the submit button.
+      </p>
+      <button id="submitButton">Submit Your Assignment</button>
+    </div>
+    <div id="mocha"></div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.1.1/mocha.min.js"
+    integrity="sha512-vOMXB+Rjob/NIG88cgEK+t6Uuf0zJIzQrfKH8VFc7AW18y/rzszRXaKPNAPf1ePv2hQ3eYR8yEu4S85Np3DhLA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.min.js"
+    integrity="sha512-x3BwhuxT44pOQZanacQyDnrB2r1L1AUfjUaefYArTHR9sHEvvy3NSnnm5Z7GAl5YPc3+GEWFT0S34obDSzUvaQ=="
+    crossorigin="anonymous"></script>
+  <script>
+    mocha.setup("bdd");
+  </script>
+  <script src="main.js"></script>
+  <script src="https://serene-roentgen-345cd7.netlify.app/tests/practice11Test.min.js"></script>
+  <script>
+    mocha.run();
+  </script>
+  <script src="https://serene-roentgen-345cd7.netlify.app/util/util11.min.js"></script>
+</body>
+
+</html>
